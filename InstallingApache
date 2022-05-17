@@ -1,0 +1,29 @@
+
+
+# LAMP STACK INSTALLATION
+
+### There were 5 installations/process involved in the this project.
+
+## STEP ONE- INSTALLING APACHE AND UPDATING THE FIREWALL:
+
+### This was done using Ubuntu package manager *apt*
+### Three steps are involves in ensuring this:
+`sudo apt update`
+
+`sudo apt install apache2`
+
+`sudo systemctl status apache2`
+
+
+### The Images below show Apache installed and evidence that the Apache is running
+
+![Install Apache](./Images/Install%20Apache2.PNG)
+
+
+![Verify Apache runnung](./Images/Verify%20Apache2%20runnung.PNG)
+
+### To confirm the server is correctly installed, is to run the IP address and if the welcome Ubuntu pages show, this confirms that it has been installed correctly.
+
+![Web Page uploaded correctly](./Images/Web%20Test.PNG)
+
+### This concludes and confiems that the Apaches is up and running smoothly.

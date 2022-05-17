@@ -1,0 +1,57 @@
+
+
+# ENABLING PHP ON A WEBSITE
+
+### By default, an HTML file will take precedence over a PHP file as the defaul is always HTML and will always take precedence over a home PHP file.
+
+### To enable a PHP file we need to do the followings:
+
+### 1. You need to change the order of the file in which the PHP file is listed in the directory 
+
+`sudo vim /etc/apache2/mods-enabled/dir.conf`
+
+### <IfModule mod_dir.c>
+        #Change this:
+        #DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+        #To this:
+        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+</IfModule>
+
+
+### 2. Save and close the above file.
+
+
+### 3. After saving the file, we will need to uplaod Apache for the changes to take effect using:
+
+`sudo systemctl reload apache2`
+
+
+### 4. Finally, we will create a PHP script to test that PHP is correctly installed and configured on your server.
+
+### Now that I have a custom location to host my website’s files and folders, I then need to create a PHP test script to confirm that Apache is able to handle and process requests for PHP files.
+
+### 5. Create a new file named index.php inside my custom web root folder:
+
+`vim /var/www/projectlamp/index.php`
+
+### This will open a blank file. I then add the following text, which is valid PHP code, inside the file:
+
+
+### `<?php
+### phpinfo();`
+
+
+![PHP Page displayed and confirmed](./Images/PHP%20Page.PNG)
+
+
+
+### 6. After checking the relevant information about the PHP server through the above page, it’s best to remove the file  created as it contains sensitive information about the PHP environment -and my Ubuntu server. You can use rm to do so:
+`sudo rm /var/www/projectlamp/index.php`
+
+### This page can always be recreated to access the information later.
+
+
+
+
+    
+

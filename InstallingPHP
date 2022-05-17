@@ -1,0 +1,17 @@
+# INSTALLING PHP
+### The third step is installing PHP.
+### PHP is the code that will help display information to the user. 
+### As well as displaying information, the PHP codes is also used to retrieve data from the Database MySQL
+
+### Three packages need to be installed and this is done by inputting the data.
+
+`sudo apt install php libapache2-mod-php php-mysql`
+
+### The next code confirms that PHP has been installed
+`php -v`
+
+
+
+![PHP has now been installed](./Images/Install%20PHP.PNG)
+
+![Confirmation screenshot](./Images/PHP%20intstalled%20confirm2.PNG)

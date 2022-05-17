@@ -1,0 +1,30 @@
+
+
+
+# INSTALLING MYSQL
+
+### The second phase involves installing a database that will store all the data that will be displayed by the Apache when requested by the user/client.
+
+### To do this, we need to run some codes in stages.
+
+
+### Again we use apt command to install the Database
+
+`$ sudo apt install mysql-server`
+
+![MySQL Server Installed](./Images/MySQL%20image.PNG)
+
+
+### When download is completed, one can log in by running the sudo command again:
+`$ sudo mysql`
+
+### Once done, you can interact with the database by runnung:
+
+`$ sudo mysql_secure_installation`
+![Succesfully Installed](./Images/Install%20MySQL%20server.PNG)
+
+### Once completed and password set, you can exit by running the command code:
+
+`mysql> exit`
+
+
